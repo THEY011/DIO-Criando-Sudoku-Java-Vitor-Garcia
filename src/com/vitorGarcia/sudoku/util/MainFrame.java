@@ -14,7 +14,7 @@ public class MainFrame extends JFrame {
     public MainFrame() {
         super("Sudoku Swing Edition");
 
-        board = PuzzleLoader.loadRandomBoard();  // Carrega tabuleiro aleatório
+        board = PuzzleLoader.loadRandomBoard();  
         sudokuPanel = new SudokuPanel(board);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,8 +44,8 @@ public class MainFrame extends JFrame {
 
         JMenuItem resetItem = new JMenuItem("Criar Novo Jogo");
         resetItem.addActionListener(e -> {
-            board = PuzzleLoader.loadRandomBoard();  // gera novo tabuleiro
-            sudokuPanel.setBoard(board);             // atualiza o painel
+            board = PuzzleLoader.loadRandomBoard();  
+            sudokuPanel.setBoard(board);             
         });
 
         JMenuItem exitItem = new JMenuItem("Sair");

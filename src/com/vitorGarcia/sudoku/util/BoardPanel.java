@@ -97,9 +97,9 @@ public class BoardPanel extends JPanel {
                     if (space.isFixed()) {
                         g2.setColor(Color.BLACK);
                     } else {
-                        // Se valor atual é igual ao esperado -> verde
+                        
                         if (value.equals(space.getExpected())) {
-                            g2.setColor(new Color(0, 128, 0)); // verde escuro
+                            g2.setColor(new Color(0, 128, 0)); 
                         } else {
                             g2.setColor(Color.RED);
                         }
